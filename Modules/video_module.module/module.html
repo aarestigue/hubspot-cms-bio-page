@@ -1,0 +1,86 @@
+<div class=module-wrapper>
+  
+  <div class="module-title">
+    <h1>
+      {{ module.header_title }}
+    </h1>
+    
+  </div>
+  
+  <div class="video-card-wrapper">
+
+  <div class="title-content title-content-{{name}}">
+
+    <div class="img-content">
+     {% if module.photo_image.src %}
+	      {% set sizeAttrs = 'width="{{ module.photo_image.width }}" height="{{ module.photo_image.height }}"' %}
+	      {% if module.photo_image.size_type == 'auto' %}
+		      {% set sizeAttrs = 'width="{{ module.photo_image.width }}" height="{{ module.photo_image.height }}" style="max-width: 100%; height: auto;"' %}
+	      {% elif module.photo_image.size_type == 'auto_custom_max' %}
+		    {% set sizeAttrs = 'width="{{ module.photo_image.max_width }}" height="{{ module.photo_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+	    {% endif %}
+	    {% set loadingAttr = module.photo_image.loading != 'disabled' ? 'loading="{{ module.photo_image.loading }}"' : '' %}
+	    <img class="title-image" src="{{ module.photo_image.src }}" alt="{{ module.photo_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    {% endif %}
+      
+    </div>
+  
+    <div class="title-card">
+      <{{ module.choice_field }} class="title">
+        {{ module.Title_text }}
+      </{{ module.choice_field }}>
+      {{ module.subtitle }}
+    </div>
+      
+      <div class="content-text">
+      {{ module.Bullet_points }}
+    </div>
+  
+  </div>  
+  
+  <div class="video-content">
+    
+      <div class="video">
+            
+        {% if module.videoplayer_field.player_id %}
+  {% set max_width = module.videoplayer_field.size_type == 'auto_custom_max' ? module.videoplayer_field.max_width : module.videoplayer_field.width %}
+  {% set max_height = module.videoplayer_field.size_type == 'auto_custom_max' ? module.videoplayer_field.max_height : module.videoplayer_field.height %}
+  {% video_player "embed_player"
+    player_id={{ module.videoplayer_field.player_id }}
+    type={{ module.videoplayer_field.player_type || 'scriptV4' }}
+    full_width={{ module.videoplayer_field.size_type == 'auto_full_width' }},
+    conversion_asset={{ module.videoplayer_field.conversion_asset|tojson|safe }}
+  %}
+{% endif %}
+      
+      </div>
+      
+      <div class="video-description">
+        {{ module.richtext_field }}
+      </div>
+    
+  </div>
+  
+
+</div>
+  
+</div>
+
+
+
+<style>
+  .title-content-{{name}} .title{
+    color:{{ module.title_font.color }};
+    font-family: {{ module.title_font.font }} 
+  }
+  
+  .module-wrapper{
+ background-color:{{ module.background_color.color }};
+ background-image: url({{ module.background_image.src }});
+}
+  .module-title{
+  color: {{ module.module_title_font.color }};
+  font-family: {{ module.module_title_font.font }};
+  }
+  
+</style>

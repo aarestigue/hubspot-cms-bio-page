@@ -1,0 +1,92 @@
+.testimonial-wrapper{
+width:100vw;
+display: flex;
+align-items:center;
+justify-content:center;
+margin: 1rem;
+}
+
+.testimonial-card{
+width: 60vw;
+height: 450px;  
+display: flex;
+flex-direction:column;
+align-items: center;
+
+
+}
+
+.testimonial-content{
+width:100%;
+display: flex;
+align-items:center;
+justify-content:center;
+}
+
+.item{
+flex:0 1 calc(35% -1rem);
+display: flex;
+flex-direction: column;
+align-items:center;
+justify-content:center;
+padding: 1.5rem;
+text-align:center;
+}
+
+.shadow-effect{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.score-image{
+width: 10vw;
+margin-bottom: 1rem;
+}
+
+.button .button-text{
+
+text-align: center;
+text-decoration: none;
+font-size: 0.8rem;
+}
+.button{
+
+  align-items: center;
+  appearance: none;
+  
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd,sans-serif;
+  height: 40px;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 20px;
+  position: relative;
+  
+  transition: background-color .2s,background-position .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.button:active,
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  background-position: -20px -20px;
+}
+
+.button:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+}
+}

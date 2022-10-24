@@ -1,0 +1,74 @@
+<section class="testimonial-wrapper">
+  <div class="testimonial-card">
+      <div>
+      <h2>
+        {{ module.title }}
+      </h2>
+    </div>
+  
+    <div class="testimonial-content">
+        {% for item in module.item %}
+            <!--TESTIMONIAL 1 -->
+            
+              <div class="item">
+              <div class="shadow-effect">
+                	{% if item.score_image.src %}                    
+                    <img class="score-image" src="{{ item.score_image.src }}" alt="{{ item.score_image.alt }}">
+                  {% endif %}
+                <h3 class="title">{% inline_rich_text field="cus_content" value="{{ item.text_field }}" %}</h3>
+              </div>
+              <p>
+                {% inline_rich_text field="testimonial" value="{{ item.richtext_field }}" %}
+              </p>
+              
+            <!--END OF TESTIMONIAL 1 -->
+            </div>
+           
+            {% endfor %}
+    </div>
+      
+    <div>
+          
+      <button class="button">
+	      {% set href = module.button_cta.button_link.url.href %}
+          {% if module.button_cta.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+	        {% set href = "mailto:" + href %}
+          {% endif %}
+        <a class="button-text" href="{{ href }}"
+	      {% if module.button_cta.button_link.open_in_new_tab %}target="_blank"{% endif %}
+	      {% if module.button_cta.button_link.rel %}rel="{{ module.button_cta.button_link.rel }}"{% endif %}
+	       >
+	      {{ module.button_cta.button_text }}
+        </a>
+      </button>
+	
+
+    </div>
+  </div>
+    
+  
+  
+</section>          
+
+<style>
+ .testimonial-wrapper{
+ background-color:{{ module.background_color.color }};
+
+}
+
+  .testimonial-content{
+  color: {{ module.testimonial_text.color }};
+  font-family: {{ module.testimonial_text.font }};
+  font-size: {{ module.testimonial_text.size }};
+  }
+  
+  .button .button-text{
+  color: {{ module.button_cta.button_text_format.color }};
+  font-family: {{ module.button_cta.button_text_format.font }};
+  font-size: {{ module.button_cta.button_text_format.size }};
+  }
+  
+  .button{
+  background-color: {{ module.button_cta.button_color.color }};
+  }
+</style>

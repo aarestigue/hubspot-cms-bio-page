@@ -1,0 +1,27 @@
+/* @import url('http://example.com/example_style.css'); */
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+
+.main-menu{
+width:100vw;
+display:flex;
+background-color: #000000;
+justify-content:space-evenly;
+align-items:center;
+color: #ffffff;
+text-decoration: none;
+}
+
+ul{
+ 
+display:flex;
+text-decoration: none;
+list-style:none;
+}

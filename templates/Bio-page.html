@@ -1,0 +1,21 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Bio page
+  
+-->
+{% extends '../layouts/base.html' %}
+
+{% block body %}
+
+<main>
+  
+  {% module "local_module" path="../Modules/video_module" label="Local module" %}
+  
+  {% module "module_166653654100873" path="/Dijy-Bio-page/Modules/testimonial_module", label="testimonial_module" %}
+    
+  {% module "module_166662597900996" path="/Dijy-Bio-page/Modules/Footer", label="Footer" %}
+</main>
+
+{% endblock body %}
+

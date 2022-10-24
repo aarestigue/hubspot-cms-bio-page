@@ -1,0 +1,169 @@
+[ {
+  "id" : "2b8a7880-a592-f4eb-ccb3-0f25955e97e4",
+  "name" : "header_title",
+  "display_width" : null,
+  "label" : "Header-title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "MEET OUR TEAM"
+}, {
+  "id" : "3d1901e2-91c3-dfc2-677c-9d2f6bd85e5f",
+  "name" : "photo_image",
+  "display_width" : null,
+  "label" : "Image",
+  "inline_help_text" : "Upload photo here",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "exact",
+    "src" : "https://26320410.fs1.hubspotusercontent-eu1.net/hubfs/26320410/brian-halligan.jpeg",
+    "alt" : "brian-halligan",
+    "loading" : "eager",
+    "width" : 400,
+    "height" : 400,
+    "max_width" : 400,
+    "max_height" : 400
+  }
+}, {
+  "id" : "cf21d2be-8727-f9d2-8eff-a1d9e364d9d9",
+  "name" : "choice_field",
+  "display_width" : null,
+  "label" : "Title type",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "h1", "H1" ], [ "h2", "H2" ], [ "h3", "H3" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "type" : "choice",
+  "default" : "h1"
+}, {
+  "id" : "673b147f-96a8-7970-354d-3fee508d55a9",
+  "name" : "title_font",
+  "display_width" : null,
+  "label" : "Title Font",
+  "required" : false,
+  "locked" : false,
+  "load_external_fonts" : true,
+  "type" : "font",
+  "default" : { }
+}, {
+  "id" : "510db36d-610f-784b-1e77-c060c6736f5d",
+  "name" : "Title_text",
+  "display_width" : null,
+  "label" : "Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Main title"
+}, {
+  "id" : "0ca9fdc8-cb68-612b-d173-d3b8afe45b86",
+  "name" : "subtitle",
+  "display_width" : null,
+  "label" : "Subtitle",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "JOB TITLE"
+}, {
+  "id" : "5e4b3e65-da1b-08d4-248d-0c541551c780",
+  "name" : "Bullet_points",
+  "display_width" : null,
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>-Bullet point 1 <br>-Bullet point 2 <br>-Bullet point 3 <br>-Bullet point 4 <br>-Bullet point 5</p>"
+}, {
+  "id" : "58091e15-2bed-9bdf-74e9-0e26396cfb35",
+  "name" : "videoplayer_field",
+  "display_width" : null,
+  "label" : "Video",
+  "required" : false,
+  "locked" : false,
+  "resizable" : true,
+  "show_preview" : true,
+  "show_advanced_options" : false,
+  "type" : "videoplayer",
+  "default" : {
+    "player_id" : 55008534490,
+    "height" : 720,
+    "width" : 1280,
+    "player_type" : "hsvideo2",
+    "size_type" : "auto_custom_max",
+    "max_width" : 200,
+    "max_height" : 113
+  }
+}, {
+  "id" : "cf652b98-fc75-6386-6ffc-e2d1e31adea0",
+  "name" : "richtext_field",
+  "display_width" : null,
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<div style=\"text-align: justify;\"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ornare fermentum lectus non gravida. Duis id nibh mattis, varius sapien ut, malesuada quam. In neque massa, vehicula non porta sit amet, suscipit vel massa. Nunc cursus arcu quis velit pulvinar, sed viverra leo posuere.&nbsp;</span></div>"
+}, {
+  "id" : "6a7c6f6d-b012-63fc-072d-cdd0dcb91b1d",
+  "name" : "background_color",
+  "display_width" : null,
+  "label" : "Background-color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : null,
+    "opacity" : null
+  }
+}, {
+  "id" : "fcd8f6ac-75b5-0cdd-5426-c4179700a5fb",
+  "name" : "background_image",
+  "display_width" : null,
+  "label" : "Background-Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://26320410.fs1.hubspotusercontent-eu1.net/hubfs/26320410/bg-img2%20(1).jpeg",
+    "alt" : "bg-img2 (1)",
+    "loading" : "lazy",
+    "width" : 327,
+    "height" : 100,
+    "max_width" : 327,
+    "max_height" : 100
+  }
+}, {
+  "id" : "508ea6f9-f74f-e8cf-dd53-af8fc7be6123",
+  "name" : "module_title_font",
+  "display_width" : null,
+  "label" : "Module-Title-Font",
+  "required" : false,
+  "locked" : false,
+  "load_external_fonts" : true,
+  "type" : "font",
+  "default" : {
+    "color" : "#FFFFFF",
+    "font" : "helvetica",
+    "fallback" : null,
+    "variant" : null,
+    "font_set" : "DEFAULT"
+  }
+} ]

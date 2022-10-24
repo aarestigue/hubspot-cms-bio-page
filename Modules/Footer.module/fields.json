@@ -1,0 +1,998 @@
+[ {
+  "id" : "34563d89-2138-f405-4394-97652df911ef",
+  "name" : "footer_background",
+  "display_width" : null,
+  "label" : "Footer Background",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#EEEEEE",
+    "opacity" : 100
+  }
+}, {
+  "id" : "abf36a62-2551-8e66-51da-3abe8488fd83",
+  "name" : "column_1",
+  "display_width" : null,
+  "label" : "Column 1",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "798b2d22-2590-7f04-31e8-88b86bdaef13",
+    "name" : "logo",
+    "display_width" : null,
+    "label" : "Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://26320410.fs1.hubspotusercontent-eu1.net/hubfs/26320410/monkey-wrench-logo.png",
+      "alt" : "monkey-wrench-logo",
+      "loading" : "lazy",
+      "width" : 3300,
+      "height" : 1812,
+      "max_width" : 3300,
+      "max_height" : 1812
+    }
+  }, {
+    "id" : "c5c1bc90-5a50-eb4b-0bfe-ff45ef5aa1d0",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "310-222-1234"
+  }, {
+    "id" : "ad695c36-d0f3-28b1-a808-b54ec237638a",
+    "name" : "social_media",
+    "display_width" : null,
+    "label" : "Social media",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 4,
+      "sorting_label_field" : null,
+      "default" : 4
+    },
+    "children" : [ {
+      "id" : "7332702b-ed2d-1b3d-18e4-4bf95516c77b",
+      "name" : "social_media_logo",
+      "display_width" : null,
+      "label" : "Social media logo",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://26320410.fs1.hubspotusercontent-eu1.net/hubfs/26320410/facebook.png",
+        "alt" : "facebook",
+        "loading" : "eager",
+        "width" : 64,
+        "height" : 64,
+        "max_width" : 64,
+        "max_height" : 64
+      }
+    }, {
+      "id" : "fb2a6522-13ab-6169-a7a9-1c72cf2bf745",
+      "name" : "image_link",
+      "display_width" : null,
+      "label" : "Image Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.google.com/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "social_media_logo" : {
+        "size_type" : "auto",
+        "src" : "https://26320410.fs1.hubspotusercontent-eu1.net/hubfs/26320410/facebook.png",
+        "alt" : "facebook",
+        "loading" : "eager",
+        "width" : 64,
+        "height" : 64,
+        "max_width" : 64,
+        "max_height" : 64
+      },
+      "image_link" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.google.com/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "social_media_logo" : {
+        "size_type" : "auto",
+        "src" : "https://26320410.fs1.hubspotusercontent-eu1.net/hubfs/26320410/facebook.png",
+        "alt" : "facebook",
+        "loading" : "eager",
+        "width" : 64,
+        "height" : 64,
+        "max_width" : 64,
+        "max_height" : 64
+      },
+      "image_link" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.google.com/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "social_media_logo" : {
+        "size_type" : "auto",
+        "src" : "https://26320410.fs1.hubspotusercontent-eu1.net/hubfs/26320410/facebook.png",
+        "alt" : "facebook",
+        "loading" : "eager",
+        "width" : 64,
+        "height" : 64,
+        "max_width" : 64,
+        "max_height" : 64
+      },
+      "image_link" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.google.com/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "social_media_logo" : {
+        "size_type" : "auto",
+        "src" : "https://26320410.fs1.hubspotusercontent-eu1.net/hubfs/26320410/facebook.png",
+        "alt" : "facebook",
+        "loading" : "eager",
+        "width" : 64,
+        "height" : 64,
+        "max_width" : 64,
+        "max_height" : 64
+      },
+      "image_link" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.google.com/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://26320410.fs1.hubspotusercontent-eu1.net/hubfs/26320410/monkey-wrench-logo.png",
+      "alt" : "monkey-wrench-logo",
+      "loading" : "lazy",
+      "width" : 3300,
+      "height" : 1812,
+      "max_width" : 3300,
+      "max_height" : 1812
+    },
+    "text_field" : "310-222-1234",
+    "social_media" : [ {
+      "social_media_logo" : {
+        "size_type" : "auto",
+        "src" : "https://26320410.fs1.hubspotusercontent-eu1.net/hubfs/26320410/facebook.png",
+        "alt" : "facebook",
+        "loading" : "eager",
+        "width" : 64,
+        "height" : 64,
+        "max_width" : 64,
+        "max_height" : 64
+      },
+      "image_link" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.google.com/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "social_media_logo" : {
+        "size_type" : "auto",
+        "src" : "https://26320410.fs1.hubspotusercontent-eu1.net/hubfs/26320410/facebook.png",
+        "alt" : "facebook",
+        "loading" : "eager",
+        "width" : 64,
+        "height" : 64,
+        "max_width" : 64,
+        "max_height" : 64
+      },
+      "image_link" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.google.com/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "social_media_logo" : {
+        "size_type" : "auto",
+        "src" : "https://26320410.fs1.hubspotusercontent-eu1.net/hubfs/26320410/facebook.png",
+        "alt" : "facebook",
+        "loading" : "eager",
+        "width" : 64,
+        "height" : 64,
+        "max_width" : 64,
+        "max_height" : 64
+      },
+      "image_link" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.google.com/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "social_media_logo" : {
+        "size_type" : "auto",
+        "src" : "https://26320410.fs1.hubspotusercontent-eu1.net/hubfs/26320410/facebook.png",
+        "alt" : "facebook",
+        "loading" : "eager",
+        "width" : 64,
+        "height" : 64,
+        "max_width" : 64,
+        "max_height" : 64
+      },
+      "image_link" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.google.com/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  }
+}, {
+  "id" : "8fc7a3b1-ee81-37bb-4b5c-01d3e664e753",
+  "name" : "column_2",
+  "display_width" : null,
+  "label" : "Column 2",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "549dddb5-ee78-ccb5-c20b-561b8a3cd24b",
+    "name" : "left_side",
+    "display_width" : null,
+    "label" : "Left side",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "e40e5016-cb7d-f8ca-9cfa-f31f446a296f",
+      "name" : "richtext_field",
+      "display_width" : null,
+      "label" : "Address",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<h4>Monterey Park</h4>\n<p><span>2560 Corporate Pl #D107</span><br><span>Monterey Park, CA 91754</span></p>"
+    }, {
+      "id" : "5cf85acc-666f-1b9a-b5dd-a41bda7a37b0",
+      "name" : "map",
+      "display_width" : null,
+      "label" : "Map",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "6eda7c5c-3df5-506e-6f1f-19193ee419a4",
+        "name" : "map_icon",
+        "display_width" : null,
+        "label" : "Map icon",
+        "required" : false,
+        "locked" : false,
+        "responsive" : true,
+        "resizable" : true,
+        "show_loading" : false,
+        "type" : "image",
+        "default" : {
+          "size_type" : "auto",
+          "src" : "https://26320410.fs1.hubspotusercontent-eu1.net/hubfs/26320410/maps-and-flags.png",
+          "alt" : "maps-and-flags",
+          "loading" : "lazy",
+          "width" : 64,
+          "height" : 64,
+          "max_width" : 64,
+          "max_height" : 64
+        }
+      }, {
+        "id" : "b77094f5-e0fc-0815-9e0c-22201d3e7d77",
+        "name" : "maps_link",
+        "display_width" : null,
+        "label" : "Maps Link",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "Map & Directions"
+      }, {
+        "id" : "cd227bb5-cabe-7f04-abb8-f357bcf36d36",
+        "name" : "link_field",
+        "display_width" : null,
+        "label" : "Link",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+        "show_advanced_rel_options" : false,
+        "type" : "link",
+        "default" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "type" : "group",
+      "default" : {
+        "map_icon" : {
+          "size_type" : "auto",
+          "src" : "https://26320410.fs1.hubspotusercontent-eu1.net/hubfs/26320410/maps-and-flags.png",
+          "alt" : "maps-and-flags",
+          "loading" : "lazy",
+          "width" : 64,
+          "height" : 64,
+          "max_width" : 64,
+          "max_height" : 64
+        },
+        "maps_link" : "Map & Directions",
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    }, {
+      "id" : "ad16fd30-be6e-ea51-7c1d-89431f3fda7b",
+      "name" : "richtext_field_1",
+      "display_width" : null,
+      "label" : "Mail Address",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<span style=\"font-family: Helvetica, Arial, sans-serif;\">Mailing Address:</span><br><span style=\"font-family: Helvetica, Arial, sans-serif;\">PO Box 741248</span><br><span style=\"font-family: Helvetica, Arial, sans-serif;\">Los Angeles, CA 90004</span>"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "richtext_field" : "<h4>Monterey Park</h4>\n<p><span>2560 Corporate Pl #D107</span><br><span>Monterey Park, CA 91754</span></p>",
+      "map" : {
+        "map_icon" : {
+          "size_type" : "auto",
+          "src" : "https://26320410.fs1.hubspotusercontent-eu1.net/hubfs/26320410/maps-and-flags.png",
+          "alt" : "maps-and-flags",
+          "loading" : "lazy",
+          "width" : 64,
+          "height" : 64,
+          "max_width" : 64,
+          "max_height" : 64
+        },
+        "maps_link" : "Map & Directions",
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      },
+      "richtext_field_1" : "<span style=\"font-family: Helvetica, Arial, sans-serif;\">Mailing Address:</span><br><span style=\"font-family: Helvetica, Arial, sans-serif;\">PO Box 741248</span><br><span style=\"font-family: Helvetica, Arial, sans-serif;\">Los Angeles, CA 90004</span>"
+    }
+  }, {
+    "id" : "eb807eeb-1436-a522-0533-cba4133b5247",
+    "name" : "right_side",
+    "display_width" : null,
+    "label" : "Right side",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "9c0a45f9-cb53-dc92-9801-b79af01c0325",
+      "name" : "booking_button",
+      "display_width" : null,
+      "label" : "Booking Button",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "4fa3c607-f49d-1b5b-59f5-c78d667e86f3",
+        "name" : "button_text",
+        "display_width" : null,
+        "label" : "Button Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "CLICK TO VERIFY"
+      }, {
+        "id" : "6782afa0-e7ad-2f17-be89-c5d33917b464",
+        "name" : "button_link",
+        "display_width" : null,
+        "label" : "Button Link",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+        "show_advanced_rel_options" : false,
+        "type" : "link",
+        "default" : {
+          "url" : {
+            "type" : "EXTERNAL",
+            "href" : "https://www.google.com/",
+            "content_id" : null
+          },
+          "open_in_new_tab" : true,
+          "no_follow" : false
+        }
+      }, {
+        "id" : "6b93fce3-75f7-a25d-237e-2f4f3fb587e2",
+        "name" : "button_color",
+        "display_width" : null,
+        "label" : "Button Color",
+        "required" : false,
+        "locked" : false,
+        "type" : "color",
+        "default" : {
+          "color" : "#0bb9e9",
+          "opacity" : 100
+        }
+      }, {
+        "id" : "3294b8de-5f69-1c97-df95-676850e13f7b",
+        "name" : "button_format",
+        "display_width" : null,
+        "label" : "Button Format",
+        "required" : false,
+        "locked" : false,
+        "load_external_fonts" : true,
+        "type" : "font",
+        "default" : { }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "type" : "group",
+      "default" : {
+        "button_text" : "CLICK TO VERIFY",
+        "button_link" : {
+          "url" : {
+            "type" : "EXTERNAL",
+            "href" : "https://www.google.com/",
+            "content_id" : null
+          },
+          "open_in_new_tab" : true,
+          "no_follow" : false
+        },
+        "button_color" : {
+          "color" : "#0bb9e9",
+          "opacity" : 100
+        },
+        "button_format" : { }
+      }
+    }, {
+      "id" : "bf17def9-6e54-5ca3-c4bf-f9c30d2a25bb",
+      "name" : "verify_button",
+      "display_width" : null,
+      "label" : "Verify Button",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "6a08e1b6-38be-551f-741a-39b625a4e7dd",
+        "name" : "button_text",
+        "display_width" : null,
+        "label" : "Button Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "CLICK TO VERIFY"
+      }, {
+        "id" : "a68ee5cd-2d70-d1cd-d229-9fc85f7de948",
+        "name" : "button_link",
+        "display_width" : null,
+        "label" : "Button Link",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+        "show_advanced_rel_options" : false,
+        "type" : "link",
+        "default" : {
+          "url" : {
+            "type" : "EXTERNAL",
+            "href" : "https://www.google.com/",
+            "content_id" : null
+          },
+          "open_in_new_tab" : true,
+          "no_follow" : false
+        }
+      }, {
+        "id" : "11ee3bef-d862-6876-c534-cd52215629ea",
+        "name" : "button_color",
+        "display_width" : null,
+        "label" : "Button Color",
+        "required" : false,
+        "locked" : false,
+        "type" : "color",
+        "default" : {
+          "color" : "#0bb9e9",
+          "opacity" : 100
+        }
+      }, {
+        "id" : "ad7fbb8a-c73e-73e6-83d2-5d6c3ea6b8c9",
+        "name" : "button_format",
+        "display_width" : null,
+        "label" : "Button Format",
+        "required" : false,
+        "locked" : false,
+        "load_external_fonts" : true,
+        "type" : "font",
+        "default" : { }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "type" : "group",
+      "default" : {
+        "button_text" : "CLICK TO VERIFY",
+        "button_link" : {
+          "url" : {
+            "type" : "EXTERNAL",
+            "href" : "https://www.google.com/",
+            "content_id" : null
+          },
+          "open_in_new_tab" : true,
+          "no_follow" : false
+        },
+        "button_color" : {
+          "color" : "#0bb9e9",
+          "opacity" : 100
+        },
+        "button_format" : { }
+      }
+    }, {
+      "id" : "a316963e-c636-9db1-8fd4-42bfef9d455e",
+      "name" : "license_info",
+      "display_width" : null,
+      "label" : "License info",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<h4><span style=\"font-family: Helvetica, Arial, sans-serif;\"><strong>License Info</strong></span></h4>\n<p><span style=\"font-family: Helvetica, Arial, sans-serif;\">License #922757</span></p>"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "booking_button" : {
+        "button_text" : "CLICK TO VERIFY",
+        "button_link" : {
+          "url" : {
+            "type" : "EXTERNAL",
+            "href" : "https://www.google.com/",
+            "content_id" : null
+          },
+          "open_in_new_tab" : true,
+          "no_follow" : false
+        },
+        "button_color" : {
+          "color" : "#0bb9e9",
+          "opacity" : 100
+        },
+        "button_format" : { }
+      },
+      "verify_button" : {
+        "button_text" : "CLICK TO VERIFY",
+        "button_link" : {
+          "url" : {
+            "type" : "EXTERNAL",
+            "href" : "https://www.google.com/",
+            "content_id" : null
+          },
+          "open_in_new_tab" : true,
+          "no_follow" : false
+        },
+        "button_color" : {
+          "color" : "#0bb9e9",
+          "opacity" : 100
+        },
+        "button_format" : { }
+      },
+      "license_info" : "<h4><span style=\"font-family: Helvetica, Arial, sans-serif;\"><strong>License Info</strong></span></h4>\n<p><span style=\"font-family: Helvetica, Arial, sans-serif;\">License #922757</span></p>"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "left_side" : {
+      "richtext_field" : "<h4>Monterey Park</h4>\n<p><span>2560 Corporate Pl #D107</span><br><span>Monterey Park, CA 91754</span></p>",
+      "map" : {
+        "map_icon" : {
+          "size_type" : "auto",
+          "src" : "https://26320410.fs1.hubspotusercontent-eu1.net/hubfs/26320410/maps-and-flags.png",
+          "alt" : "maps-and-flags",
+          "loading" : "lazy",
+          "width" : 64,
+          "height" : 64,
+          "max_width" : 64,
+          "max_height" : 64
+        },
+        "maps_link" : "Map & Directions",
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      },
+      "richtext_field_1" : "<span style=\"font-family: Helvetica, Arial, sans-serif;\">Mailing Address:</span><br><span style=\"font-family: Helvetica, Arial, sans-serif;\">PO Box 741248</span><br><span style=\"font-family: Helvetica, Arial, sans-serif;\">Los Angeles, CA 90004</span>"
+    },
+    "right_side" : {
+      "booking_button" : {
+        "button_text" : "CLICK TO VERIFY",
+        "button_link" : {
+          "url" : {
+            "type" : "EXTERNAL",
+            "href" : "https://www.google.com/",
+            "content_id" : null
+          },
+          "open_in_new_tab" : true,
+          "no_follow" : false
+        },
+        "button_color" : {
+          "color" : "#0bb9e9",
+          "opacity" : 100
+        },
+        "button_format" : { }
+      },
+      "verify_button" : {
+        "button_text" : "CLICK TO VERIFY",
+        "button_link" : {
+          "url" : {
+            "type" : "EXTERNAL",
+            "href" : "https://www.google.com/",
+            "content_id" : null
+          },
+          "open_in_new_tab" : true,
+          "no_follow" : false
+        },
+        "button_color" : {
+          "color" : "#0bb9e9",
+          "opacity" : 100
+        },
+        "button_format" : { }
+      },
+      "license_info" : "<h4><span style=\"font-family: Helvetica, Arial, sans-serif;\"><strong>License Info</strong></span></h4>\n<p><span style=\"font-family: Helvetica, Arial, sans-serif;\">License #922757</span></p>"
+    }
+  }
+}, {
+  "id" : "05c877bf-f9f9-a601-de42-22f22212c3f6",
+  "name" : "column_3",
+  "display_width" : null,
+  "label" : "Column 3",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "1f49f7b0-89b2-cac3-98e7-81ee7bca8f65",
+    "name" : "column_3_title",
+    "display_width" : null,
+    "label" : "Column 3 title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Quick Links"
+  }, {
+    "id" : "3cc61bef-f0c3-fe76-8dc8-56b9275c09e5",
+    "name" : "title_format",
+    "display_width" : null,
+    "label" : "Title Format",
+    "required" : false,
+    "locked" : false,
+    "load_external_fonts" : true,
+    "type" : "font",
+    "default" : { }
+  }, {
+    "id" : "fa2bc9cb-5590-4a94-6501-4b8c118d9c2c",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Link field",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 8,
+      "sorting_label_field" : null,
+      "default" : 8
+    },
+    "children" : [ {
+      "id" : "b7a9d050-7d33-5f0e-cd6c-e2bf5d0f8061",
+      "name" : "links",
+      "display_width" : null,
+      "label" : "Links",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.google.com/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : true,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "f40e8f39-2cca-8c9d-dbe6-81c5e8cb104f",
+      "name" : "link_text",
+      "display_width" : null,
+      "label" : "Link Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Home"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "links" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.google.com/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : true,
+        "no_follow" : false
+      },
+      "link_text" : "Home"
+    }, {
+      "links" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.google.com/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : true,
+        "no_follow" : false
+      },
+      "link_text" : "Home"
+    }, {
+      "links" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.google.com/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : true,
+        "no_follow" : false
+      },
+      "link_text" : "Home"
+    }, {
+      "links" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.google.com/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : true,
+        "no_follow" : false
+      },
+      "link_text" : "Home"
+    }, {
+      "links" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.google.com/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : true,
+        "no_follow" : false
+      },
+      "link_text" : "Home"
+    }, {
+      "links" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.google.com/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : true,
+        "no_follow" : false
+      },
+      "link_text" : "Home"
+    }, {
+      "links" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.google.com/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : true,
+        "no_follow" : false
+      },
+      "link_text" : "Home"
+    }, {
+      "links" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.google.com/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : true,
+        "no_follow" : false
+      },
+      "link_text" : "Home"
+    } ]
+  }, {
+    "id" : "8ab2ba6a-6f79-d36a-3a78-ce93a672608e",
+    "name" : "links_format",
+    "display_width" : null,
+    "label" : "Links format",
+    "required" : false,
+    "locked" : false,
+    "load_external_fonts" : true,
+    "type" : "font",
+    "default" : { }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "column_3_title" : "Quick Links",
+    "title_format" : { },
+    "link_field" : [ {
+      "links" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.google.com/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : true,
+        "no_follow" : false
+      },
+      "link_text" : "Home"
+    }, {
+      "links" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.google.com/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : true,
+        "no_follow" : false
+      },
+      "link_text" : "Home"
+    }, {
+      "links" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.google.com/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : true,
+        "no_follow" : false
+      },
+      "link_text" : "Home"
+    }, {
+      "links" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.google.com/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : true,
+        "no_follow" : false
+      },
+      "link_text" : "Home"
+    }, {
+      "links" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.google.com/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : true,
+        "no_follow" : false
+      },
+      "link_text" : "Home"
+    }, {
+      "links" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.google.com/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : true,
+        "no_follow" : false
+      },
+      "link_text" : "Home"
+    }, {
+      "links" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.google.com/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : true,
+        "no_follow" : false
+      },
+      "link_text" : "Home"
+    }, {
+      "links" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.google.com/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : true,
+        "no_follow" : false
+      },
+      "link_text" : "Home"
+    } ],
+    "links_format" : { }
+  }
+} ]

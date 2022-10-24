@@ -1,0 +1,133 @@
+<footer class="footer">
+    <div class="footer-body">
+      <div class="footer-column-1">
+        <img class="logo-image" src="{{ module.column_1.logo.src }}" alt="{{ module.column_1.logo.alt }}">
+        <h3>
+          {{ module.column_1.text_field }}
+        </h3>
+        <div class="social-media">
+            {% for item in module.column_1.social_media %}
+	
+	            {% set href = item.image_link.url.href %}
+	            {% if item.image_link.url.type is equalto "EMAIL_ADDRESS" %}
+		            {% set href = "mailto:" + href %}
+	            {% endif %}
+	            <a href="{{ href }}" class="ssmm-link"
+		            {% if item.image_link.open_in_new_tab %}target="_blank"{% endif %}
+		            {% if item.image_link.rel %}rel="{{ item.image_link.rel }}"{% endif %}
+		          >
+		          <img class="ssmm-image" src="{{ item.social_media_logo.src }}" alt="{{ item.social_media_logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+	            </a>
+          {% endfor %}
+        </div>
+      </div>
+      
+      <div class="footer-column-2">
+        
+        <div class="column-2-left">
+            <div >
+              {{ module.column_2.left_side.richtext_field }}
+            </div>
+          
+            <div >
+              {% set href = module.column_2.left_side.map.link_field.url.href %}
+              {% if module.column_2.left_side.map.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+	            {% set href = "mailto:" + href %}
+              {% endif %}
+                <a href="{{ href }}" class="map-text"
+	              {% if module.column_2.left_side.map.link_field.open_in_new_tab %}target="_blank"{% endif %}
+	              {% if module.column_2.left_side.map.link_field.rel %}rel="{{ module.column_2.map.link_field.rel }}"{% endif %}
+	               >
+                    <img class="map-icon" src="{{ module.column_2.left_side.map.map_icon.src }}" alt="{{ module.column_2.map.map_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+	                  <p>
+                      {{ module.column_2.left_side.map.maps_link }}
+                    </p>
+                </a>
+            </div>
+          
+            <div class="mail-text">
+                {{ module.column_2.left_side.richtext_field_1 }}
+            </div>
+        </div>
+        
+        <div class="column-2-right">
+          
+          <div>
+              {{ module.column_2.right_side.license_info }}
+          </div>
+          
+          
+          <button class="button">
+	            {% set href = module.column_2.right_side.verify_button.button_link.url.href %}
+              {% if module.column_2.right_side.verify_button.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+	              {% set href = "mailto:" + href %}
+              {% endif %}
+                <a href="{{ href }}" class="button-text"
+	              {% if module.column_2.right_side.verify_button.button_link.open_in_new_tab %}target="_blank"{% endif %}
+	              {% if module.column_2.right_side.verify_button.button_link.rel %}rel="{{ module.column_2.right_side.verify_button.button_link.rel }}"{% endif %}
+	              >
+	                {{ module.column_2.right_side.verify_button.button_text }}
+                </a>
+	      
+            </button>
+          
+            <button class="button">
+                {% set href = module.column_2.right_side.booking_button.button_link.url.href %}
+                  {% if module.column_2.right_side.booking_button.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+	                    {% set href = "mailto:" + href %}
+                  {% endif %}
+                <a href="{{ href }}" class="button-text"
+	              {% if module.column_2.right_side.booking_button.button_link.open_in_new_tab %}target="_blank"{% endif %}
+	              {% if module.column_2.right_side.booking_button.button_link.rel %}rel="{{ module.column_2.right_side.booking_button.button_link.rel }}"{% endif %}
+	              >
+                  {{ module.column_2.right_side.booking_button.button_text }}
+                </a>
+            </button>
+        </div>
+            
+     </div>
+      
+      <div class="footer-column-3">
+          <h4>
+            {{ module.column_3.column_3_title }}
+          </h4>
+          {% for item in module.column_3.link_field %} 
+                {% set href = item.links.url.href %}
+                  {% if item.links.url.type is equalto "EMAIL_ADDRESS" %}
+	                    {% set href = "mailto:" + href %}
+                  {% endif %}
+                <a href="{{ href }}" class="links-text"
+	              {% if item.links.open_in_new_tab %}target="_blank"{% endif %}
+	              {% if item.links.rel %}rel="{{ item.links.rel }}"{% endif %}
+	              >
+                  {{ item.link_text }}
+                </a>
+          {% endfor %}
+      </div>
+    </div>
+  
+    <div>
+      <h4>
+        ⓒ 2022 All Rights Reserved.
+      </h4>
+    </div>
+  
+</footer>
+
+<style>
+ .footer-body{
+ background-color:{{ module.footer_background.color }};
+
+}
+  
+.footer-column-3 h4{
+font-family:{{ module.column_3.title_format.font }};
+color: {{ module.column_3.title_format.color }};
+}
+  
+.links-text{
+font-family:{{ module.column_3.links_format.font }};
+color: {{ module.column_3.links_format.color }};
+}
+
+</style>

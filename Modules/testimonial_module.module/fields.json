@@ -1,0 +1,193 @@
+[ {
+  "id" : "1a504447-599f-63d1-662d-54e6bcc6ea46",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Clients about Ruben"
+}, {
+  "id" : "81860bf4-1b43-139a-277a-9d1ce6e220b0",
+  "name" : "item",
+  "display_width" : null,
+  "label" : "item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 3,
+    "sorting_label_field" : "8282133a-4d0a-c508-3613-6cdfd62b23b1",
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "39289f7c-6fdf-da60-c08a-b972c16d2a81",
+    "name" : "score_image",
+    "display_width" : null,
+    "label" : "Score image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://26320410.fs1.hubspotusercontent-eu1.net/hubfs/26320410/stars-1.png",
+      "alt" : "stars-1",
+      "loading" : "eager",
+      "width" : 465,
+      "height" : 108,
+      "max_width" : 465,
+      "max_height" : 108
+    }
+  }, {
+    "id" : "8282133a-4d0a-c508-3613-6cdfd62b23b1",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Couldn't ask for a better experience!"
+  }, {
+    "id" : "c23cbd91-1ba3-77b6-f781-fe6e5076c476",
+    "name" : "richtext_field",
+    "display_width" : null,
+    "label" : "Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;</span>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "score_image" : {
+      "size_type" : "auto",
+      "src" : "https://26320410.fs1.hubspotusercontent-eu1.net/hubfs/26320410/stars-1.png",
+      "alt" : "stars-1",
+      "loading" : "eager",
+      "width" : 465,
+      "height" : 108,
+      "max_width" : 465,
+      "max_height" : 108
+    },
+    "text_field" : "Couldn't ask for a better experience!",
+    "richtext_field" : "<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;</span>"
+  } ]
+}, {
+  "id" : "a12469cc-e729-5032-324a-de82d9920bc3",
+  "name" : "button_cta",
+  "display_width" : null,
+  "label" : "Button CTA",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "2eaeda1d-8431-41c5-d62e-ad5765ac5a35",
+    "name" : "button_link",
+    "display_width" : null,
+    "label" : "Button Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.google.com/",
+        "content_id" : null
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "02b00c59-5b00-3866-ae40-dbe876343eff",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "READ MORE REVIEWS"
+  }, {
+    "id" : "8f8c7698-5043-eff6-2f44-c8facfeb4572",
+    "name" : "button_color",
+    "display_width" : null,
+    "label" : "Button Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#04adcf",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "89a17003-c40c-9d56-fe34-b69fd935361c",
+    "name" : "button_text_format",
+    "display_width" : null,
+    "label" : "Button text format",
+    "required" : false,
+    "locked" : false,
+    "load_external_fonts" : true,
+    "type" : "font",
+    "default" : {
+      "color" : "#FFFFFF"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "button_link" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.google.com/",
+        "content_id" : null
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    },
+    "button_text" : "READ MORE REVIEWS",
+    "button_color" : {
+      "color" : "#04adcf",
+      "opacity" : 100
+    },
+    "button_text_format" : {
+      "color" : "#FFFFFF"
+    }
+  }
+}, {
+  "id" : "7814788e-217b-872e-1390-59e659f439cb",
+  "name" : "testimonial_text",
+  "display_width" : null,
+  "label" : "Testimonial text",
+  "required" : false,
+  "locked" : false,
+  "load_external_fonts" : true,
+  "type" : "font",
+  "default" : { }
+}, {
+  "id" : "7d94ce0a-fae4-f5cb-f830-4d84e9b95ebf",
+  "name" : "background_color",
+  "display_width" : null,
+  "label" : "Background color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : null,
+    "opacity" : null
+  }
+} ]
